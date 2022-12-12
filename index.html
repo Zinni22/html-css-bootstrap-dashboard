@@ -20,14 +20,104 @@
 <body>
 
     <!-- INIZIO HEADER -->
-    <header>
+    <header id="navbar">
+
+        <div class="row p-2 gap-2">
+
+            <div class="col-1 p-1">
+                <img src="img/logo.svg" alt="">
+            </div>
+
+            <div class="col py-1 px-2 search-bar">
+                <input type="text" placeholder="Prova a cercare: Lezioni di Laravel">
+            </div>
+
+            <div class="col-1 p-1 d-flex justify-content-around">
+                <a href="#">
+                    <i class="bi bi-list-ul"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-question-circle-fill"></i>  
+                </a>
+                
+                <a href="#">
+                    <i class="bi bi-three-dots-vertical"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-bell-fill orange"></i>
+                </a>
+            </div>
+
+        </div>
 
     </header>
     <!-- FINE HEADER -->
 
     <!-- INIZIO MAIN -->
-    <main>
-        
+    <main class="d-flex">
+
+        <!-- Aside -->
+        <aside class="d-flex flex-column justify-content-between">
+
+            <div>
+                <div class="row gy-3 py-3">
+
+                    <div class="col-12 px-4">
+                        <i class="bi bi-house-door-fill"></i>
+                        Home
+                    </div>
+
+                    <div class="col-12 px-4">
+                        <i class="bi bi-reception-4"></i>
+                        Stats
+                    </div>
+
+                    <div class="col-12 px-4">
+                        <i class="bi bi-reception-4"></i>
+                        Signals
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="row">
+
+                    <div class="col-12 p-4">
+                        <i class="bi bi-gear-wide-connected"></i>
+                        Admin
+                    </div>
+
+                </div>
+            </div>
+            
+        </aside>
+        <!-- Aside -->
+
+        <!-- Content -->
+        <section class="content">
+
+            <div class="row content-header">
+
+                <div class="col-6 p-3">
+                    Boolean
+                </div>
+
+                <div class="col-3 p-3">
+                    Boolean
+                </div>
+
+                <div class="col-3 p-3">
+                    Boolean
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Content -->
+
     </main>
     <!-- FINE MAIN -->
     

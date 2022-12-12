@@ -1,0 +1,67 @@
+/* GENERALI */
+.orange{
+    color: #ff8f00;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.row{
+    margin: 0;
+}
+
+
+:root{
+    --main-grey: #f7f7f7;
+    --main-blue: #1b72e8;
+    --darkest-grey: #e5e5e5;
+    --darkest-blue: #051e34;
+}
+
+/* HEADER */
+#navbar{
+    background-color: var(--main-grey);
+    height: 50px;
+}
+.search-bar{
+    background-color: var(--darkest-grey);
+    border-radius: 5px;
+}
+.search-bar input{
+    background-color: var(--darkest-grey);
+    width: 100%;
+    border: none;
+    outline-style: none;
+}
+#navbar img{
+    width: 100%;
+}
+
+
+/* MAIN */
+/* Aside */
+aside{
+    width: 200px;
+    height: calc(100vh - 50px);
+    color: white;
+    background-color:var(--darkest-blue);
+    background-image: url(../img/sidebar-bg.png);
+}
+
+
+/* Content */
+.content{
+    width: calc(100% - 200px);
+    background-color: var(--main-grey);
+}
+.content-header{
+    background-color: var(--main-blue);
+    color: white;
+}
