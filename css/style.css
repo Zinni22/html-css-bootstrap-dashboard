@@ -20,26 +20,6 @@
     --darkest-grey: #e5e5e5;
     --darkest-blue: #051e34;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
-a:hover{
-    color: black;
-}
-
-
-
-
-
-
-.red{
-    background-color: red;
-}
-.yellow{
-    background-color: yellow;
-}
-
 
 /* HEADER */
 #navbar{
@@ -58,6 +38,13 @@ a:hover{
 }
 #navbar img{
     width: 100%;
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+}
+#navbar a:hover{
+    color: black;
 }
 
 
@@ -82,14 +69,14 @@ aside a:hover{
 /* Content */
 .main-content{
     width: calc(100% - 150px);
+    height: calc(100vh - 60px);
     background-color: var(--main-grey);
+    
+    overflow: auto;
 }
 .content-header{
     background-color: var(--main-blue);
     color: white;
-}
-.content{
-    overflow: auto;
 }
 
 /* Pannello classi */
@@ -100,6 +87,9 @@ aside a:hover{
 .first-panel .row{
     border-bottom: 1px solid lightgray;
 }
+.first-panel .row:hover{
+    background-color: var(--darkest-grey);
+}
 .first-panel .row:last-of-type{
     border-bottom: none;
 }
@@ -107,7 +97,6 @@ aside a:hover{
     background-color: var(--darkest-grey);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    border-bottom: 1px solid red;
 }
 .classi{
     font-size: 12px;
@@ -131,4 +120,23 @@ aside a:hover{
     border: 1px solid grey;
     border-radius: 2px;
     padding: 0.2rem;
+}
+
+/* Pannello Todo */
+.third-panel > div{
+    border-bottom: 1px solid lightgrey;
+}
+.third-panel > div:last-of-type{
+    border-bottom: none;
+}
+
+/* Pannello Stats */
+.stats{
+    width: 100%;
+}
+.fourth-panel > div{
+    border-bottom: 1px solid lightgrey;
+}
+.fourth-panel > div:last-of-type{
+    border-bottom: none;
 }
