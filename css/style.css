@@ -2,10 +2,36 @@
 .orange{
     color: #ff8f00;
 }
+.green-status{
+    background-color: green;
+}
+.red-status{
+    background-color: red;
+}
+.yellow-status{
+    background-color: rgb(212, 197, 24);
+}
+.row{
+    margin: 0;
+}
+:root{
+    --main-grey: #f7f7f7;
+    --main-blue: #1b72e8;
+    --darkest-grey: #e5e5e5;
+    --darkest-blue: #051e34;
+}
 a{
     text-decoration: none;
     color: black;
 }
+a:hover{
+    color: black;
+}
+
+
+
+
+
 
 .red{
     background-color: red;
@@ -13,22 +39,12 @@ a{
 .yellow{
     background-color: yellow;
 }
-.row{
-    margin: 0;
-}
 
-
-:root{
-    --main-grey: #f7f7f7;
-    --main-blue: #1b72e8;
-    --darkest-grey: #e5e5e5;
-    --darkest-blue: #051e34;
-}
 
 /* HEADER */
 #navbar{
     background-color: var(--main-grey);
-    height: 50px;
+    height: 60px;
 }
 .search-bar{
     background-color: var(--darkest-grey);
@@ -48,20 +64,71 @@ a{
 /* MAIN */
 /* Aside */
 aside{
-    width: 200px;
-    height: calc(100vh - 50px);
+    width: 150px;
+    height: calc(100vh - 60px);
     color: white;
     background-color:var(--darkest-blue);
     background-image: url(../img/sidebar-bg.png);
 }
+aside a{
+    text-decoration: none;
+    color: white;
+}
+aside a:hover{
+    color: white;
+}
 
 
 /* Content */
-.content{
-    width: calc(100% - 200px);
+.main-content{
+    width: calc(100% - 150px);
     background-color: var(--main-grey);
 }
 .content-header{
     background-color: var(--main-blue);
     color: white;
+}
+.content{
+    overflow: auto;
+}
+
+/* Pannello classi */
+.panel{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.first-panel .row{
+    border-bottom: 1px solid lightgray;
+}
+.first-panel .row:last-of-type{
+    border-bottom: none;
+}
+.panel-title{
+    background-color: var(--darkest-grey);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 1px solid red;
+}
+.classi{
+    font-size: 12px;
+}
+.code-slash{
+    background-color: #f26551;
+    color: white;
+    text-align: center;
+    padding: 0.2rem 0.4rem;;
+    border-radius: 50%;
+    display: inline-block;
+}
+.status{
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.2rem 0;
+    font-size: 10px;
+}
+.azioni i{
+    border: 1px solid grey;
+    border-radius: 2px;
+    padding: 0.2rem;
 }
