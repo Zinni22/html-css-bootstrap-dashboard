@@ -11,6 +11,9 @@
 .yellow-status{
     background-color: rgb(212, 197, 24);
 }
+.white-hover:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
 .row{
     margin: 0;
 }
@@ -77,6 +80,33 @@ aside a:hover{
 .content-header{
     background-color: var(--main-blue);
     color: white;
+}
+.content-header div p{
+    margin-bottom: 0;
+}
+.content-header div span{
+    font-size: 35px;
+}
+.content-header div .plus{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 2px 8px;
+
+}
+.content-header a{
+    text-decoration: none;
+}
+.tasti{
+    color: white;
+    font-size: 12px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+.tasto-1{
+    top: 20px;
+    left: 140px;
 }
 
 /* Pannello classi */
