@@ -39,8 +39,11 @@
     border: none;
     outline-style: none;
 }
-#navbar img{
+#navbar .big-logo{
     width: 100%;
+}
+#navbar .mobile-logo{
+    display: none;
 }
 #navbar a{
     text-decoration: none;
@@ -74,7 +77,6 @@ aside a:hover{
     width: calc(100% - 150px);
     height: calc(100vh - 60px);
     background-color: var(--main-grey);
-    
     overflow: auto;
 }
 .content-header{
@@ -169,4 +171,55 @@ aside a:hover{
 }
 .fourth-panel > div:last-of-type{
     border-bottom: none;
+}
+
+
+/* MEDIA QUERY */
+/* Tablet */
+@media all and (max-width:768px) {
+    
+    #navbar i{
+        display: none;
+    }
+    #navbar .bi-bell-fill{
+        display: block;
+    }
+
+    #navbar .big-logo{
+        display: none;
+    }
+    #navbar .mobile-logo{
+        display: block;
+        width: 30px;
+    }
+
+    /* Aside */
+    aside{
+        width: 50px;
+    }
+    aside a span{
+        display: none;
+    }
+
+    /* Content */
+    .tasti{
+        display: none;
+    }
+    .main-content{
+        width: calc(100% - 50px);
+    }
+}
+
+/* Smartphone */
+@media all and (max-width:576px) {
+    
+    /* Content */
+
+    .first-panel .data-inizio{
+        display: none;
+    }
+
+    .first-panel .ROI{
+        display: none;
+    }
 }
